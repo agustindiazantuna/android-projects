@@ -1,0 +1,13 @@
+/build
+
+## my constrains
+/libs
+*.iml
+*.gradle
+*.pro
+
+/src/androidTest/
+/src/test/
+
+/src/main/res/*
+!/src/main/res/layout

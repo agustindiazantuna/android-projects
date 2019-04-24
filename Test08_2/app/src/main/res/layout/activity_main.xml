@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="580dp"
+        android:layout_marginLeft="580dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Text to send"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginLeft="328dp"
+        android:layout_marginTop="68dp"
+        android:text="Operando B"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numberB"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="440dp"
+        android:layout_marginLeft="440dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="132dp"
+        android:text="Borrar resultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="157dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="224dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="573dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="272dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="91dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="476dp"
+        android:layout_marginLeft="476dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numberC"
+        android:layout_width="113dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="176dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="30sp"
+        android:text="AppName"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="80dp"
+        android:text="Received text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="116dp"
+        android:onClick="sendMail"
+        android:text="SEND"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="83dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="224dp"
+        android:onClick="about"
+        android:text="EXTRAS"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/RadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail" />
+
+        <RadioButton
+            android:id="@+id/RadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
